@@ -18,7 +18,10 @@ const getCorsOrigins = () => {
     'http://localhost:3000',
     'http://localhost:5177',
     'https://kcare.onrender.com',
-    'https://kcare-admin.onrender.com' // Production frontend on Render
+    'https://kcare-admin.onrender.com',
+    'https://admin.kcareclinic.com',
+    'https://kcareclinic.com',
+     // Production frontend on Render
   ];
   
   if (process.env.FRONTEND_URL) {
