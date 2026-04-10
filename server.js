@@ -16,6 +16,7 @@ const getCorsOrigins = () => {
     'http://localhost:5173',
     'http://localhost:5174',
     'http://localhost:3000',
+    'http://localhost:5177',
     'https://kcare.onrender.com',
     'https://kcare-admin.onrender.com' // Production frontend on Render
   ];
@@ -62,13 +63,17 @@ const ChatMessage = mongoose.models.ChatMessage || mongoose.model('ChatMessage',
 // Import routes
 const authRoutes = require('./routes/auth');
 const blogRoutes = require('./routes/blogs');
+const contactRoutes = require('./routes/contact');
 const heroSectionRoutes = require('./routes/heroSection');
+const heroBannerRoutes = require('./routes/heroBanner');
 const testimonialRoutes = require('./routes/testimonials');
 
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);
+app.use('/api/contact', contactRoutes);
 app.use('/api/hero-section', heroSectionRoutes);
+app.use('/api/hero-banner', heroBannerRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 
 // Uptime robot / ping – lightweight, no DB (for monitoring)
