@@ -21,6 +21,7 @@ const getCorsOrigins = () => {
     'https://kcare-admin.onrender.com',
     'https://admin.kcareclinic.com',
     'https://kcareclinic.com',
+    'https://kcareclinic.com'
      // Production frontend on Render
   ];
   
