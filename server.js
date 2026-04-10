@@ -72,7 +72,7 @@ app.use('/api/hero-section', heroSectionRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 
 // Uptime robot / ping – lightweight, no DB (for monitoring)
-app.get('/ping', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ pong: true, timestamp: new Date().toISOString() });
 });
 
